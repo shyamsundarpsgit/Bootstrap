@@ -1,0 +1,258 @@
+body {
+    background-color: #E9EDF2;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main {
+    padding: 0;
+    max-width:49%;
+}
+.container-md{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.card {
+    border-radius: 22px;
+    border: unset !important;
+}
+
+.card-head {
+    padding: 23px 20px 0px 20px;
+}
+
+:root {
+    --primary-color: #4318FF;
+    --title-color: #2B3674;
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-style: normal;
+    color: var(--title-color);
+    font-weight: 700;
+    letter-spacing: -0.48px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload {
+    width: 100%;
+    padding: 19px;
+    border-radius: 13px;
+    border: 1px dashed #B2BAD0;
+    background-color: #FAFCFE;
+}
+
+.upload i {
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+.upload h6 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.32px;
+}
+
+.accept {
+    color: #8F9BBA;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.24px;
+}
+
+.form-label::after {
+    content: "*";
+    color: red;
+    padding: 3px;
+}
+
+.genders {
+    gap: 50px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    color: var(--title-color);
+    font-size: 14px;
+    padding: 6px 10px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.28px;
+}
+
+.form-label,
+.form-check-label {
+    color: var(--title-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.alert {
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.alert h6 {
+    color: #624E17;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+
+}
+
+.alert p {
+    color: #624E17;
+    font-size: 12px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.28px;
+}
+
+#height-in-cm {
+    max-width: 65px;
+    border-radius: 16px;
+}
+
+#weight-in-kg {
+    max-width: 60px;
+    border-radius: 16px;
+}
+
+.color-select {
+    width: 100%;
+    height: 30px;
+    border-radius: 16px;
+    border: 1px solid #B6BBC7;
+}
+.form-range::-webkit-slider-thumb{
+    background-color: var(--primary-color);
+}
+.templates {
+    padding-top: 5px;
+}
+
+.qualifications::after {
+    display: none;
+}
+
+.description textarea {
+    line-height: 27px;
+}
+
+.submission {
+    padding: 15px;
+    border-radius: 22px;
+}
+
+.buttons button:first-child {
+    color: #2B3674;
+    text-align: center;
+    background-color: #FAF9FF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.buttons button:last-child {
+    border-radius: 16px;
+    padding: 15px 18px;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.form-select:focus,
+.form-control:focus,
+.form-check-input:focus {
+
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+}
+
+/* Media Querry */
+@media screen and (max-width:1200px){
+      #salutation {
+        margin-bottom: 10px;
+    }
+   .description textarea{
+    line-height:24px;
+   }
+
+}
+@media screen and (max-width:992px){
+    .main {
+        max-width: unset;
+        width: 100% !important;
+    }
+
+    .main:last-child {
+        margin-top: 30px;
+    }
+
+}
+@media screen and (max-width:768px) {
+
+   .container{
+    padding-left:unset !important;
+    padding-right:unset  !important;
+   } 
+ 
+}
+
+@media screen and (max-width:576px) {
+
+    .card{
+        border-radius:unset;
+       }
+       .submission{
+        border-radius:unset;
+       } 
+       .container-md{
+        padding-top:0;
+        padding-bottom:0;
+       }
+    .form-submission{
+        margin-top:0 !important;
+    }
+    .main:last-child{
+        margin-top:0;
+    }
+
+    #firstname,
+    #email,
+    #date,
+    #country,
+    #city,
+    #color-picker {
+        margin-bottom: 10px;
+    }
+}
+
